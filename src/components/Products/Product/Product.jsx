@@ -20,7 +20,7 @@ const Product = () => {
   return (
     <div >
       {products.map((el)=>(
-        <div style={{border:"1px solid red",dispaly:"flex",gap:"10px"}}>
+        <div style={{boxShadow:"rgba(3, 102, 214, 0.3) 0px 0px 0px 3px",width:"25%",margin:"auto",marginTop:"30px",display:"grid",gridtemplateColumns:"1 4fr",padding:"10px"}}>
           <div data-cy={`product-${product.id}`}>
         <h3 data-cy="product-name">{el.name}</h3>
         <h6 data-cy="product-description">{el.description}</h6>
